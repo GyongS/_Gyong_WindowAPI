@@ -1,0 +1,19 @@
+#pragma once
+#ifndef __MOONCOVER_H__
+#define __MOONCOVER_H__
+#include "Obj.h"
+class CMoonCover :	public CObj
+{
+
+public:
+	CMoonCover();
+	virtual ~CMoonCover();
+public:
+	virtual void Init() override;
+	virtual int Update() override;
+	virtual void Late_Update() override;
+	virtual void Render(HDC _DC) override;
+	virtual void Release() override;
+};
+
+#endif // __MOONCOVER_H__

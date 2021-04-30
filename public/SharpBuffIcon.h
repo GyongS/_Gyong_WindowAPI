@@ -1,0 +1,15 @@
+#pragma once
+#include "Obj.h"
+class CSharpBuffIcon : public CObj
+{
+public:
+	CSharpBuffIcon();
+	virtual ~CSharpBuffIcon();
+public:
+	virtual void Init() override;
+	virtual int Update() override;
+	virtual void Late_Update() override;
+	virtual void Render(HDC _DC) override;
+	virtual void Release() override;
+};
+
